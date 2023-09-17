@@ -3,14 +3,16 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import 'dotenv/config';
 
-import {userRouter} from './routes/users.js'
+import {userRouter} from "./routes/users.js";
+import {recipesRouter} from "./routes/recipes.js";
 
 const app = express()
 
 app.use(express.json());
 app.use(cors());
 
-app.use("/auth", userRouter); //31:58 / 2:37:48
+app.use("/auth", userRouter); 
+app.use("/recipes", recipesRouter);
 
 const mongoPassword = process.env.MONGODB_PASSWORD;
 
