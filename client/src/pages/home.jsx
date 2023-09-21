@@ -14,7 +14,7 @@ export const Home = () => {
     useEffect(() => {
         const fetchRecipe = async () => {
             try {
-                const response = await axios.get("http://localhost:3001/recipes");
+                const response = await axios.get("https://mel-recipe-app.fly.dev/recipes");
                 setRecipes(response.data);
             } catch (err) {
                 console.error(err);
@@ -24,7 +24,7 @@ export const Home = () => {
         const fetchSavedRecipe = async () => {
             try {
                 const response = await axios.get(
-                    `http://localhost:3001/recipes/savedRecipes/ids/${userID}`
+                    `https://mel-recipe-app.fly.dev/recipes/savedRecipes/ids/${userID}`
                 );
                 setSavedRecipes(response.data.savedRecipes);
             } catch (err) {
@@ -40,7 +40,7 @@ export const Home = () => {
 
     const saveRecipe = async (recipeID) => {
         try {
-            const response = await axios.put("http://localhost:3001/recipes", {recipeID, userID,}, {headers: {authorization: cookies.access_token}});
+            const response = await axios.put("https://mel-recipe-app.fly.dev/recipes", {recipeID, userID,}, {headers: {authorization: cookies.access_token}});
             setSavedRecipes(response.data.savedRecipes);
         } catch (err) {
             console.error(err);
