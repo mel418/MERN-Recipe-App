@@ -10,7 +10,7 @@ export const SavedRecipes = () => {
         const fetchSavedRecipe = async () => {
             try {
                 const response = await axios.get(
-                    `http://localhost:3001/recipes/savedRecipes/${userID}`
+                    `https://mel-mern-recipe-app.vercel.app/recipes/savedRecipes/${userID}`
                 );
                 setSavedRecipes(response.data.savedRecipes);
             } catch (err) {
