@@ -19,9 +19,9 @@ app.use(express.json());
 app.use("/auth", userRouter); 
 app.use("/recipes", recipesRouter);
 
-const mongoPassword = process.env.MONGODB_PASSWORD;
+// const mongoPassword = process.env.MONGODB_PASSWORD;
 
-mongoose.connect(`mongodb+srv://melodygatan:${mongoPassword}@recipes.mznagvd.mongodb.net/recipes?retryWrites=true&w=majority`)
+mongoose.connect(`mongodb+srv://melodygatan:nEELH2J5Er58M4M6@recipes.mznagvd.mongodb.net/recipes?retryWrites=true&w=majority`)
 
 const port = process.env.PORT || 3001;
 
