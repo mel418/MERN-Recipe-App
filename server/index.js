@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin: ["https://mern-recipe-app-frontend.vercel.app/"],
+    origin: ["https://mern-recipe-app-frontend.vercel.app"],
     methodsL: ["POST", "GET"],
     credentials: true,
 
