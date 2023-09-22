@@ -3,17 +3,12 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import 'dotenv/config';
 
-import {userRouter} from "./routes/users.js";
-import {recipesRouter} from "./routes/recipes.js";
+import {userRouter} from "./src/routes/users.js";
+import {recipesRouter} from "./src/routes/recipes.js";
 
 const app = express();
-app.use(cors(
-  {
-    origin: ["https://mern-recipe-app-backend.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true
-  }
-));
+
+app.use(cors());
 app.use(express.json());
 
 app.use("/auth", userRouter); 
