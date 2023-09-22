@@ -9,7 +9,7 @@ import {recipesRouter} from "./routes/recipes.js";
 const app = express();
 app.use(cors(
   {
-    origin: ["mern-recipe-app-backend-mjyu9m9jw-mel418.vercel.app"],
+    origin: ["https://mern-recipe-app-backend.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
   }
