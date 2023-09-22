@@ -7,9 +7,14 @@ import {userRouter} from "./routes/users.js";
 import {recipesRouter} from "./routes/recipes.js";
 
 const app = express();
-
+app.use(cors(
+  {
+    origin: ["mern-recipe-app-backend-mjyu9m9jw-mel418.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+));
 app.use(express.json());
-app.use(cors());
 
 app.use("/auth", userRouter); 
 app.use("/recipes", recipesRouter);
