@@ -10,7 +10,7 @@ export const SavedRecipes = () => {
         const fetchSavedRecipe = async () => {
             try {
                 const response = await axios.get(
-                    `https://mel-recipe-app.fly.dev/recipes/savedRecipes/${userID}`
+                    `http://localhost:3001/recipes/savedRecipes/${userID}`
                 );
                 setSavedRecipes(response.data.savedRecipes);
             } catch (err) {

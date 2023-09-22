@@ -23,7 +23,7 @@ const Login = () => {
     const onSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post("https://mel-recipe-app.fly.dev/auth/login", {
+            const response = await axios.post("http://localhost:3001/auth/login", {
                 username,
                 password,
             });
@@ -54,7 +54,7 @@ const Register = () => {
     const onSubmit = async (event) => {
         event.preventDefault();
         try {
-            await axios.post("https://mel-recipe-app.fly.dev/auth/register", {
+            await axios.post("http://localhost:3001/auth/register", {
                 username,
                 password,
             });
