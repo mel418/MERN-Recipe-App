@@ -23,7 +23,9 @@ app.use("/recipes", recipesRouter);
 
 const mongoPassword = process.env.MONGODB_PASSWORD;
 
-mongoose.connect(`mongodb+srv://melodygatan:${mongoPassword}@recipes.mznagvd.mongodb.net/recipes?retryWrites=true&w=majority`)
+mongoose.connect(`mongodb+srv://melodygatan:${mongoPassword}@recipes.mznagvd.mongodb.net/recipes?retryWrites=true&w=majority`);
+
+app.options("*", cors());
 
 const port = process.env.PORT || 3001;
 
