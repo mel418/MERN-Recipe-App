@@ -6,18 +6,18 @@ This repository houses a MERN (MongoDB, Express, React, Node.js) stack recipe ap
 
 - **Authentication**: Users can register and log in.
   - Registration and login functionality included.
-  - ![Login Page](https://media.discordapp.net/attachments/1015313926738694234/1164446272854437918/image.png?ex=65433e19&is=6530c919&hm=7c7058c47f743cf1931ea9ecf422f57ddd4f09cb2c1928b03ce6c1484265f1ea&=&width=1366&height=671)
+![Login Page](https://media.discordapp.net/attachments/1015313926738694234/1164446272854437918/image.png?ex=65433e19&is=6530c919&hm=7c7058c47f743cf1931ea9ecf422f57ddd4f09cb2c1928b03ce6c1484265f1ea&=&width=1366&height=671)
 
 - **Create Recipe**: Users can create new recipes.
   - Enter recipe details like name, ingredients, and cooking time.
   - Recipes are stored in the database.
-  - ![Create Recipe Page](https://media.discordapp.net/attachments/1015313926738694234/1164446103345836092/image.png?ex=65433df1&is=6530c8f1&hm=3057a7bf3383743a924e2aa3500e1b65677e806df01bfdabcdf3f1c1a9f5e9c6&=&width=1380&height=671)
+![Create Recipe Page](https://media.discordapp.net/attachments/1015313926738694234/1164446103345836092/image.png?ex=65433df1&is=6530c8f1&hm=3057a7bf3383743a924e2aa3500e1b65677e806df01bfdabcdf3f1c1a9f5e9c6&=&width=1380&height=671)
 
 - **Home Page**: Main recipe display.
   - View a list of recipes.
   - Save favorite recipes.
   - Fetches recipes from the server.
-  - ![Recipe Home Page](https://media.discordapp.net/attachments/1015313926738694234/1164445824391057438/image.png?ex=65433dae&is=6530c8ae&hm=92b04ed7617f68a6eb760bc4096f4c641430dcc7148560f41211bc7feaa21ad1&=&width=1382&height=671)
+![Recipe Home Page](https://media.discordapp.net/attachments/1015313926738694234/1164445824391057438/image.png?ex=65433dae&is=6530c8ae&hm=92b04ed7617f68a6eb760bc4096f4c641430dcc7148560f41211bc7feaa21ad1&=&width=1382&height=671)
 
 ## Getting Started
 
