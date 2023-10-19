@@ -14,9 +14,9 @@ app.use(cors());
 app.use("/auth", userRouter); 
 app.use("/recipes", recipesRouter);
 
-const mongoPassword = process.env.MONGODB_PASSWORD;
+const mongoUrl = process.env.MONGODB_URL;
 
-mongoose.connect(`mongodb+srv://melodygatan:${mongoPassword}@recipes.mznagvd.mongodb.net/recipes?retryWrites=true&w=majority`)
+mongoose.connect(mongoUrl);
 
 
 

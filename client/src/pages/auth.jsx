@@ -16,6 +16,7 @@ const Login = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
+    // eslint-disable-next-line
     const [_, setCookies] = useCookies(["access_token"]);
 
     const navigate = useNavigate();
